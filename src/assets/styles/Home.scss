@@ -1,0 +1,22 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.grid{
+
+    @include flex-center;
+    flex-wrap: wrap; 
+    margin: 30px 0;
+    padding: 20px 0;
+    @include background-colors(#F6F6F6);
+    @include small-radius;
+}
+
+/* mobiles */
+@media screen and (max-width: 767px) {
+    .grid {
+        margin: 35px 0;
+        padding: 0;
+        @include background-colors(white);
+    }  
+}
+

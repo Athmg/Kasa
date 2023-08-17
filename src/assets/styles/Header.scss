@@ -1,0 +1,81 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+/* Navbar */
+.bloc-nav {
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
+  @include flex-btw;
+  height: $header-height;
+  padding: 15px 10%;
+    
+  .logo{
+    width: 200px;
+    height: 68px;
+  } 
+
+  .links{
+    display: flex;
+    font-family: Montserrat;
+    @include font-size(24px);
+    @include font-weight(500);
+        
+    .link {
+      margin-left: 10px;
+      a {
+        text-decoration: none;
+        color:$primary;
+        padding: 5px 10px;
+      }
+      :hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+/* Banner*/
+.banner {
+  @include width-max;
+  height: 200px;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  @include flex-center;
+  color: white;   
+  font-weight: bold; 
+  @include font-size(48px);
+  @include font-weight(500);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  filter: brightness(0.6); 
+
+  .banner-text {
+    color: white; 
+  }
+}
+
+/* mobiles */
+@media screen and (max-width: 767px) {
+  .bloc-nav {
+    padding: 0 2%;
+
+    .logo{
+      width: 120px;
+      height:50px
+    }
+
+    .links{
+      @include font-size(17px);
+    }
+  }
+  .banner {
+    height: 111px;
+    font-family: Montserrat;
+    @include font-size(22px);
+  }  
+}

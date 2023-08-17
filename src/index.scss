@@ -1,0 +1,53 @@
+/* variables*/
+@import "./assets/styles/Variables.scss";
+@import "./assets/styles/Mixins.scss";
+
+
+/* composants*/
+@import "./assets/styles/Header.scss";
+@import "./assets/styles/Card.scss";
+@import "./assets/styles/Carousel.scss";
+@import "./assets/styles/Cercle.scss";
+@import "./assets/styles/Collapse.scss";
+@import "./assets/styles/Etoile.scss";
+@import "./assets/styles/Tag.scss";
+@import "./assets/styles/Footer.scss";
+
+/* pages */
+@import "./assets/styles/About.scss";
+@import "./assets/styles/Error.scss";
+@import "./assets/styles/FicheLogement.scss";
+@import "./assets/styles/Home.scss";
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $monts-font;
+    line-height: 30px;
+}
+
+.app {
+    min-height: 100vh;
+    color: $primary;  
+
+    .app_main {  
+        margin-top: 20px;   
+        margin: 0 10%;
+    }
+}
+/* mobiles */
+@media screen and (max-width: 767px) {
+
+    .app {
+        .app_main{
+            margin-top: 10px;
+            margin: 0 2%;
+        }
+    }
+}

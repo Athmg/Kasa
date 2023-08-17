@@ -1,0 +1,18 @@
+@import "./Variables.scss";
+@import "./Mixins.scss";
+.container {
+    @include flex-column;    
+    margin-top: 30px;
+
+    &_collapse{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* mobiles */
+@media screen and (max-width: 767px) {
+    .container_collapse {
+        @include width-max;          
+    }
+}

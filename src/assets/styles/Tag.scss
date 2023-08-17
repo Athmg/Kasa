@@ -1,0 +1,10 @@
+.tag{
+    padding: 1px 8px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color:#FF6060;
+    border-radius: 0.5rem;
+    display: inline-block;
+    @include font-size(14px);
+}

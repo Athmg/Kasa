@@ -1,0 +1,13 @@
+
+@import "./Variables.scss";
+.etoile-plein {
+    color: $primary;   
+}
+  
+.etoile-vide {
+color: $color-star-gray;
+}
+
+.star{    
+    margin-right: 10px;
+}

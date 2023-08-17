@@ -1,0 +1,92 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.logement {
+    color: $primary;
+    @include font-size(18px);
+
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    &_header{
+       @include flex-btw;
+
+        h1,p, .header_tags{
+            padding-bottom: 15px;
+       }
+    }
+
+    .host_container{
+       @include flex-center;
+    }
+
+    .host_name{
+        padding: 0 15px;
+    }
+
+    .host_etoiles{  
+        padding-top: 25px;
+        padding-left: 65px;
+    }
+
+    .collapse_container{
+        @include flex-btw;
+    }
+
+    .col-description {
+        padding-top: 10px;
+        width: 45%;
+    }   
+
+    &_host{
+        align-self: center;
+    }
+
+    .logement_host {
+        @include flex-column;
+    }    
+} 
+  
+  /* Mobiles */
+
+  //@include size-media(767px){}
+
+  
+@media screen and (max-width: 767px){
+
+    .logement {
+        margin: 0;
+        
+        &_header{
+            @include flex-column-one;
+        }
+        .header-container{
+            @include width-max;
+        }
+        .host_name{
+            width: 80px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .host_etoiles{
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .collapse_container {
+            @include flex-column-one;
+        }
+        
+        .col-description {
+            @include width-max;
+        } 
+
+        .logement_host{
+            @include width-max;
+            @include flex-btw;
+            flex-direction:row-reverse;
+        }
+    }
+}  

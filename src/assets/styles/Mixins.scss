@@ -1,0 +1,91 @@
+
+@mixin body {
+    max-width: $wmax;
+    min-width: $wmin;
+    margin: 0;
+}
+
+@mixin font($size, $weight, $line) {
+    font-size: ($size);
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $line;
+}
+
+@mixin width-max{
+    width: 100%;
+}
+
+@mixin background-colors($color) {
+    background-color: $color;
+}
+
+
+/* mixins sur les border*/
+@mixin small-radius {
+    border-radius: 10px;
+}
+
+@mixin big-radius {
+    border-radius: 25px;
+}
+
+@mixin font-weight($weight){
+    font-weight: $weight;
+
+}
+
+@mixin font-size($size){
+    font-size: $size;
+
+}
+
+
+
+/*mixins sur les flex*/
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-one{
+    flex-direction: column;
+}
+
+
+
+/*** medias queries ***/
+
+@mixin size-media($size) {
+    @if $size == "small" {
+      @media screen and (max-width: 767px) {
+        @content;
+      }
+    }
+    
+    @else if $size == "medium" {
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+      }
+    }
+    
+    @else if $size == "large" {
+      @media screen and (min-width: 1024px) {
+        @content;
+      }
+    }
+}  

@@ -1,0 +1,34 @@
+@import './Variables.scss';
+@import './Mixins.scss';
+
+.card{ 
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 15px 30px;
+    .card_img{      
+        @include width-max;
+        @include small-radius;
+        height: 220px;
+        object-fit: cover;       
+    }
+
+    .link-logement{
+        position: absolute;
+        bottom: 25px;
+        margin: 0 5px;   
+        text-decoration: none;
+        color:white;
+        font-family: Montserrat;
+        @include font-size(20px);
+    }
+}
+
+/* mobiles */
+@media screen and (max-width: 767px) {
+    .card {
+        margin: 0;
+        @include width-max;
+
+    }  
+}
