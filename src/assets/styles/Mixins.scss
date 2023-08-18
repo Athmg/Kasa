@@ -56,11 +56,11 @@
 
 
 
-/*** medias queries ***/
+/*** medias queries **
 
 @mixin size-media($size) {
     @if $size == "small" {
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 480px) {
         @content;
       }
     }
@@ -76,4 +76,4 @@
         @content;
       }
     }
-}  
+}  */
