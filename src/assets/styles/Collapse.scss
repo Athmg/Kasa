@@ -9,9 +9,7 @@
 .collapse {
   border-radius: 10px;
   margin-bottom: 10px;
-  overflow: hidden;
-  transition: height 0.3s ease;
-
+ 
   .title {
     display: flex;
     justify-content: space-between;
@@ -20,13 +18,11 @@
     padding: 5px;
     border-radius: 3px;
   }
-
   .body {
     width: 100%;
     background-color: #F6F6F6;
     padding: 0 5px;
     border-radius: 0 0 10px 10px;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    pointer-events: none;   
   }
 }

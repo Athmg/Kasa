@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -9,8 +8,6 @@ const Collapse = ({ title, body }) => {
   const toggleCollapse = () => {
     setOpen(!isOpen);
   };
-
-  //const collapseClass = isOpen ? 'collapse open' : 'collapse';
 
   return (
     <div className='collapse'>
