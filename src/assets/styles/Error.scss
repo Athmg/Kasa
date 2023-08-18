@@ -1,44 +1,63 @@
 @import "./Variables.scss";
 @import "./Mixins.scss";
 
-  .main_error{   
-    @include flex-column;     
-    h1 {
-        @include font-size(80px);
-        @include font-weight(900);
-        margin: 40px 0;
-    }  
 
-    .main_content{
-        @include font-size(36px);
-        @include font-weight(400);
-        margin: 50px 0;
+.error{
+    padding-top: 15rem;
+    .main_error{   
+
+        @include flex-column;     
+            h1 {
+                @include font-size(80px);
+                @include font-weight(900);
+                margin: 40px 0; 
+            }  
+
+        .container_error{
+
+            @include flex-column;
+            margin-top: 60px;
+
+            .p_error{
+                @include font-size(46px);
+                @include font-weight(500);
+                margin-top: 90px;
+                line-height: 1.5em;
+            }
+
+            .link_error {  
+                @include font-size(18px);
+                @include font-weight(500);
+                padding-top: 80px;  
+                margin-bottom: 40px;
+                color: $primary;    
+                text-decoration: underline $primary;    
+            } 
+        }
     }
-
-    .main_link {  
-        padding-top: 80px;  
-        margin-bottom: 40px;
-        color: $primary;    
-        text-decoration: underline $primary;    
-    } 
 }
 
 /* mobiles */
 @media screen and (max-width: 767px) {
 
-    .main_error{       
-        .container_error{
-            @include flex-column;   
-        }
-      
-        .main_content{
-            margin: 0 20px;
-            @include font-size(02px);
-            @include font-weight(400);
-        }
+    .error{
+        padding-top: 2rem;
+        .main_error{ 
 
-        .main_link{
-            @include font-size(14px);
+            .container_error{     
+        
+                .p_error{
+                    @include font-size(18px);
+                    @include font-weight(400);
+                    margin-top: 20px;
+                    width: 76%;
+                    text-align: center;
+                }
+
+                .link_error{
+                    @include font-size(14px);
+                }
+            }
         }
     }
 }

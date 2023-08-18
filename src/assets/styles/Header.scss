@@ -1,10 +1,8 @@
 @import './Variables.scss';
 @import './Mixins.scss';
+
 /* Navbar */
-.bloc-nav {
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
+.bloc-nav { 
   @include flex-btw;
   height: $header-height;
   padding: 15px 10%;
@@ -34,14 +32,10 @@
   }
 }
 
-
 /* Banner*/
 .banner {
   @include width-max;
   height: 200px;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   @include flex-center;
   color: white;   
   font-weight: bold; 
@@ -51,9 +45,6 @@
   background-position: center;
   border-radius: 10px;
   margin-bottom: 10px;
-
-  filter: brightness(0.6); 
-
   .banner-text {
     color: white; 
   }

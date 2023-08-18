@@ -18,11 +18,13 @@ function Home () {
         text="Chez vous partout et ailleurs"
       />
       <div className="grid">
-        {
-          JsonLogement.map((item) => (
-          <Card key={item.id} title={item.title} id={item.id} image={item.cover}/>        
-          ))
-        }      
+        
+          {
+            JsonLogement.map((item) => (
+            <Card key={item.id} title={item.title} id={item.id} image={item.cover}/>        
+            ))
+          }  
+      
       </div>
     </div>
   )
