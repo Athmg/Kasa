@@ -15,10 +15,10 @@ const Collapse = ({ title, body }) => {
   return (
     <div className='collapse'>
       <div className='title' onClick={toggleCollapse}>
-        <div>{title}</div>
-        <div className='icon'><FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} /></div>        
+        <div>{title}</div> 
+        <FontAwesomeIcon
+        icon={isOpen ? faChevronUp : faChevronDown}/>
       </div>
-
       <div className='body'>
         {isOpen && <div>{body}</div>}
       </div>

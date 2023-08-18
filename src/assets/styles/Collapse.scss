@@ -9,6 +9,8 @@
 .collapse {
   border-radius: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
 
   .title {
     display: flex;

@@ -36,6 +36,7 @@
     .col-description {
         padding-top: 10px;
         width: 45%;
+        align-self: self-start;
     }   
 
     &_host{
@@ -81,6 +82,7 @@
         
         .col-description {
             @include width-max;
+           
         } 
 
         .logement_host{
