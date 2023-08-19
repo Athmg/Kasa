@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-
 const Carousel = ({ images }) => {
   const [index, setImage] = useState(0)
 
@@ -12,7 +11,6 @@ const Carousel = ({ images }) => {
       setImage(index + 1)
     }
   }
-
   const previousImage = () => {
     if (index === 0) {
       setImage(images.length - 1)
@@ -20,10 +18,8 @@ const Carousel = ({ images }) => {
       setImage(index - 1)
     }
   }
-
   // Vérifier si le carousel a une seule photo
   const isSingleImage = images.length === 1;
-
   return (
     <div className='carousel-container'>
       <div>

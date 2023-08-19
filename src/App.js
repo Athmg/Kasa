@@ -10,7 +10,6 @@ import FicheLogement from './pages/FicheLogement'
 
 import JsonLogement from './data/logements.json'; 
 
-
 function App() {
   return (
     <div className='app'>

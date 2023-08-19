@@ -57,7 +57,8 @@ function FicheLogement({ jsonData }) {
                     <Collapse
                         title="Description"
                         body={logement.description}
-                        sizeWidth={true} />
+                        //sizeWidth={true}
+                         />
                 </div>
 
                 {/* Equipement */}
@@ -70,7 +71,8 @@ function FicheLogement({ jsonData }) {
                                     <div key={equipment}> {equipment} </div>
                                 ))
                         }
-                    sizeWidth={true} />
+                   // sizeWidth={true} 
+                   />
                 </div>
             </div>
         </div>
